@@ -24,10 +24,10 @@ class Staff(models.Model):
     staffid = models.IntegerField(primary_key=True)
 
 class Student(models.Model):
-    user = models.OneToOneField(User,on_delete=models.CASCADE)
+    # user = models.OneToOneField(User,on_delete=models.CASCADE)
     name = models.CharField(max_length=20)
     address = models.CharField(max_length=100)
-    dept = models.ForeignKey(Department, on_delete=models.CASCADE)
+    # dept = models.ForeignKey(Department, on_delete=models.CASCADE)
     admnno = models.IntegerField(primary_key=True)
     semester = models.IntegerField()
 

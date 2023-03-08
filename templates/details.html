@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+    <form action="/details" method="POST">
+        {% csrf_token %}
+        <div class="container" style="display:grid";>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter name" name="name" id="name">
+
+            <br><br><label for="address"><b>Address</b></label>
+            <input type="text" placeholder="Enter address" name="address" id="address">
+
+            <br><br><label for="admnno"><b>Admission No.</b></label>
+            <input type="number" placeholder="Enter admission no." name="admnno" id="admnno">
+
+            <br><br><label for="semester"><b>Semester</b></label>
+            <input type="number" placeholder="Enter semester" name="semester" id="semester">
+
+            <br><br><button type="submit" class="submitbtn">Submit</button>
+
+        </div>
+        
+        
+    </form>
+
+
+</body>
+</html>
